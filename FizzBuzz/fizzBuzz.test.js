@@ -4,7 +4,7 @@ test('number that is divisible by 3 and 5 should return FizzBuzz', () => {
   // THIS IS WHERE TEST CODE GOES
   const result = fizzBuzz(30);
   console.log("divisible by 3 and 5", result);
-  expect(result).toEqual("FizzBuzz");
+  expect(result).toBe("FizzBuzz");
 });
 
 
@@ -12,14 +12,14 @@ test('number that is divisible by 3 should return Fizz', () => {
   // THIS IS WHERE TEST CODE GOES
   const result = fizzBuzz(12)
   console.log("divisible by 3", result);
-  expect(result).toThrow("Fizz");
+  expect(result).toBe("Fizz");
 });
 
 test('number that is divisible by 5 should return Buzz', () => {
   // THIS IS WHERE TEST CODE GOES
   const result = fizzBuzz(10)
   console.log("divisible by 5", result);
-  expect(result).toThrow("Buzz");
+  expect(result).toBe("Buzz");
 });
 
 
