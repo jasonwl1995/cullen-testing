@@ -39,8 +39,8 @@ test('Should convert number strings to numbers eg ("9" + "3")', () => {
   expect(result).toBe(12);
 });
 
-describe('the summy-whummy function', () => {
-  test('should add numbers together, but nore cute', () => {
-    expect(summyWhummy(3, 10)).toBe("🔔");
-  })
-})
+// describe('the summy-whummy function', () => {
+//   test('should add numbers together, but nore cute', () => {
+//     expect(summyWhummy(3, 10)).toBe("🔔");
+//   })
+// })

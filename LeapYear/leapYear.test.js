@@ -1,6 +1,6 @@
 const leapYear = require('./leapYear.js');
 
-test('number that is divisible by 4 should return true', () => {
+test('number that is divisible by 4 and not by 100 should return true', () => {
   // THIS IS WHERE TEST CODE GOES
   const result = leapYear(40);
   console.log("divisible by 4", result);
@@ -8,11 +8,11 @@ test('number that is divisible by 4 should return true', () => {
 });
 
 
-test('number that is divisible by 100 should return true', () => {
+test('number that is divisible by 4 AND divisible by 100 should return false', () => {
   // THIS IS WHERE TEST CODE GOES
   const result = leapYear(1900)
   console.log("divisible by 100", result);
-  expect(result).toThrow("true");
+  expect(result).toThrow("false");
 });
 
 test('number that is divisible by 400 should return true', () => {
